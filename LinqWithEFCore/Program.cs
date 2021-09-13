@@ -8,24 +8,35 @@ namespace LinqWithEFCore
     {
         static void Main(string[] args)
         {
-            //FilterAndSort();
+            FilterAndSort();
             //JoinCategoriesAndProducts();
             //GroupJoinCategoriesAndProducts();
-            AggregateProducts();
+            //AggregateProducts();
         }
 
         static void FilterAndSort()
         {
             using (var db = new Northwind())
             {
+                // var query = db.Products
+                //     .Where(p => p.UnitPrice < 10M)
+                //     .OrderByDescending(p => p.UnitPrice)
+                //     .Select(p => new
+                //     {
+                //         p.ProductID,
+                //         p.ProductName,
+                //         p.UnitPrice
+                //     });
+
                 var query = db.Products
-                    .Where(p => p.UnitPrice < 10M)
-                    .OrderByDescending(p => p.UnitPrice)
-                    .Select(p => new
+                    .ProcessSequence()
+                    .Where(product => product.UnitPrice < 10M)
+                    .OrderByDescending(product => product.UnitPrice)
+                    .Select(product => new
                     {
-                        p.ProductID,
-                        p.ProductName,
-                        p.UnitPrice
+                        product.ProductID,
+                        product.ProductName,
+                        product.UnitPrice
                     });
 
                 WriteLine("Products that cost less than $10:");
