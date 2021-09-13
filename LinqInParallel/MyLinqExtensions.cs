@@ -21,10 +21,10 @@ namespace System.Linq
 
         public static int? Median<T>(this IEnumerable<T> sequence, Func<T, int?> selector)
         {
-            return sequence.Select(selector).Mediana();
+            return sequence.Select(selector).Median();
         }
 
-        public static decimal? Mediana(this IEnumerable<decimal?> sequence)
+        public static decimal? Median(this IEnumerable<decimal?> sequence)
         {
             var ordered = sequence.OrderBy(item => item);
             int middlePosition = ordered.Count() / 2;
