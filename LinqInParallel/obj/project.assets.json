@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "/home/user/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\CSharp8_book\\Code\\Chapter12\\LinqInParallel\\LinqInParallel.csproj",
+      "projectUniqueName": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj",
       "projectName": "LinqInParallel",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\CSharp8_book\\Code\\Chapter12\\LinqInParallel\\LinqInParallel.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\CSharp8_book\\Code\\Chapter12\\LinqInParallel\\obj\\",
+      "projectPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj",
+      "packagesPath": "/home/user/.nuget/packages/",
+      "outputPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/user/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

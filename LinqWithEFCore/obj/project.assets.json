@@ -355,6 +355,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "LinqInParallel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/LinqInParallel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LinqInParallel.dll": {}
+        }
       }
     }
   },
@@ -929,10 +939,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "LinqInParallel/1.0.0": {
+      "type": "project",
+      "path": "../LinqInParallel/LinqInParallel.csproj",
+      "msbuildProject": "../LinqInParallel/LinqInParallel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "LinqInParallel >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.9"
     ]
   },
@@ -960,7 +976,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj": {
+              "projectPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

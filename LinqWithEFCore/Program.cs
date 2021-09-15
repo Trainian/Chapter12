@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Xml.Linq;
 using static System.Console;
 
 namespace LinqWithEFCore
@@ -8,10 +9,13 @@ namespace LinqWithEFCore
     {
         static void Main(string[] args)
         {
-            FilterAndSort();
+            //FilterAndSort();
             //JoinCategoriesAndProducts();
             //GroupJoinCategoriesAndProducts();
             //AggregateProducts();
+            //CustomExtensionMethods();
+            //OutputProductAsXml();
+            ProcessSettings();
         }
 
         static void FilterAndSort()
@@ -128,6 +132,65 @@ namespace LinqWithEFCore
                     arg0: "Value of units in stock:",
                     arg1: db.Products.AsEnumerable()
                         .Sum(p => p.UnitPrice * p.UnitsInStock));
+            }
+        }
+
+        static void CustomExtensionMethods()
+        {
+            using (var db = new Northwind())
+            {
+                WriteLine("Mean units in stock: {0:N0}",
+                    db.Products.Average(p => p.UnitsInStock));
+
+                WriteLine("Mean unit price: {0:$#,##0.00}",
+                    db.Products.Average(p => p.UnitPrice));
+
+                WriteLine("Median units in stock: {0:N0}",
+                    db.Products.Median(p => p.UnitsInStock));
+
+                WriteLine("Median unit price: {0:$#,##0.00}",
+                    db.Products.Median(p => p.UnitPrice));
+
+                WriteLine("Mod units in stock: {0:N0}",
+                    db.Products.Mode(p => p.UnitsInStock));
+
+                WriteLine("Mod unit price: {0:$#,##0.00}",
+                    db.Products.Mode(p => p.UnitPrice));
+            }
+        }
+
+        static void OutputProductAsXml()
+        {
+            using (var db = new Northwind())
+            {
+                var productsForXml = db.Products.ToArray();
+
+                var xml = new XElement("products",
+                    from p in productsForXml
+                    select new XElement ("product",
+                        new XAttribute("id", p.ProductID),
+                        new XAttribute("price", p.UnitPrice),
+                        new XElement("name", p.ProductName)));
+
+                WriteLine(xml.ToString());
+            }
+        }
+
+        static void ProcessSettings()
+        {
+            XDocument doc = XDocument.Load("settings.xml");
+
+            var appSettings = doc.Descendants("appSettings")
+                .Descendants("add")
+                .Select(node => new
+                    {
+                        Key = node.Attribute("key").Value,
+                        Value = node.Attribute("value").Value
+                    }).ToArray();
+
+            foreach (var item in appSettings)
+            {
+                WriteLine($"{item.Key}: {item.Value}");
             }
         }
     }

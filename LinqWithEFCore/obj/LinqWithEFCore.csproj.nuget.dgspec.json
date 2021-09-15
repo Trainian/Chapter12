@@ -4,6 +4,58 @@
     "/home/user/vscode/Book/Chapter12/LinqWithEFCore/LinqWithEFCore.csproj": {}
   },
   "projects": {
+    "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj",
+        "projectName": "LinqInParallel",
+        "projectPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/user/vscode/Book/Chapter12/LinqWithEFCore/LinqWithEFCore.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +77,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj": {
+                "projectPath": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

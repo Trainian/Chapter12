@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "LinqWithEFCore/1.0.0": {
         "dependencies": {
+          "LinqInParallel": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.9"
         },
         "runtime": {
@@ -316,7 +317,12 @@
           }
         }
       },
-      "System.Memory/4.5.3": {}
+      "System.Memory/4.5.3": {},
+      "LinqInParallel/1.0.0": {
+        "runtime": {
+          "LinqInParallel.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -506,6 +512,11 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "LinqInParallel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

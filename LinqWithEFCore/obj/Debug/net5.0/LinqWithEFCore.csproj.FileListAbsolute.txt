@@ -100,3 +100,9 @@ C:/Users/Admin/source/repos/CSharp8_book/Code/Chapter12/LinqWithEFCore/obj/Debug
 /home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
 /home/user/vscode/Book/Chapter12/LinqWithEFCore/obj/Debug/net5.0/LinqWithEFCore.csproj.CopyComplete
 /home/user/vscode/Book/Chapter12/LinqWithEFCore/obj/Debug/net5.0/LinqWithEFCore.genruntimeconfig.cache
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel.deps.json
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel.runtimeconfig.json
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel.runtimeconfig.dev.json
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel.dll
+/home/user/vscode/Book/Chapter12/LinqWithEFCore/bin/Debug/net5.0/LinqInParallel.pdb

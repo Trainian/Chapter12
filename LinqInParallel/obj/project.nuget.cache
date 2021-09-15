@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e/vxawGYOcuKye6kaJ/2pe0KX7IjCqimZLQHLmpJvbSSB7v+LHVfBSTj9/HqTAe7GdnpGayNr1MYWf9aQnPAng==",
+  "dgSpecHash": "s+5iEKEhF4Xx4AGiam21ipLk0iJp87bkVeIVVFz/t/2MwHquNxIZGQLvxwNOPw1hU+31IxXqlI1CTw+XQjcUoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\CSharp8_book\\Code\\Chapter12\\LinqInParallel\\LinqInParallel.csproj",
+  "projectFilePath": "/home/user/vscode/Book/Chapter12/LinqInParallel/LinqInParallel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
